@@ -2,76 +2,88 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context=".FirstActivity">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="77dp"
-        android:layout_height="wrap_content"
-        android:text="NAME:"
-        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon" />
 
     <EditText
         android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:drawableLeft="@drawable/user"
         android:ems="5"
         android:hint="@string/user_name"
-        android:inputType="text" />
+        android:inputType="text"
+        android:background="@drawable/border"/>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BIRTHDAY DATE:"
-        android:textStyle="bold" />
     <EditText
-        android:id="@+id/date"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="#d4d4d4"
-        android:hint="Select Birthday Date"
-        android:padding="15dp"
+        android:id="@+id/etEmail"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/email"
+        android:paddingLeft="25dp"
+        android:ems="5"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/birthday"
+        android:hint="@string/hint"
+        android:paddingLeft="25dp"
         android:textColor="#b23a48"
         android:textColorHint="#b23a48"
         android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADDRESS:"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/border"/>
 
     <EditText
         android:id="@+id/etAddress"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/address"
+        android:paddingLeft="25dp"
         android:ems="10"
         android:inputType="text"
         android:hint="@string/address"
+        android:background="@drawable/border"
         />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PHONE NUMBER:"
-        android:textStyle="bold" />
     <EditText
         android:id="@+id/etPhoneNum"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/phone"
+        android:paddingLeft="25dp"
         android:ems="10"
+        android:hint="@string/phone_num"
         android:inputType="phone"
-        android:hint="@string/phone_num" />
+        android:background="@drawable/border"/>
 
 
     <Button
@@ -79,16 +91,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:onClick="send_data"
-        android:text="Send Data"
-
+        android:text="@string/button"
         />
 
-    <!--    <Spinner-->
-<!--        android:id="@+id/birth_date"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-
-<!--        />-->
-
 </LinearLayout>
+
